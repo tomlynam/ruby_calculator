@@ -9,10 +9,17 @@ puts "Welcome to the Ruby Calculator"
 
 # Get the first number
 puts "What is the first Number?"
-number1 = gets.strip.to_f
-	if number1.is_a?(Numeric)
-		else puts "'#{number1}' is not a valid input, please try again."
+number1 = gets.strip
+	if number1 == 'clear'
+		exit
+	elsif number1 == "0"
+		number1.to_f
+	else number1 = number1.to_f
+		if number1 == 0.0
+			puts "That is not a valid input, please try again."
 			exit
+		else
+		end
 	end
 
 
@@ -27,10 +34,17 @@ modifier = gets.strip
 
 # Get the second number
 puts "Enter the second number:"
-number2 = gets.strip.to_f
-	if number2.is_a?(Numeric)
-		else puts "'#{number2}' is not a valid input, please try again."
+number2 = gets.strip
+	if number2 == 'clear'
 			exit
+	elsif number2 == "0"
+		number2.to_f
+	else number2 = number2.to_f
+		if number2 == 0.0
+			puts "That is not a valid input, please try again."
+			exit
+		else
+		end
 	end
 
 
