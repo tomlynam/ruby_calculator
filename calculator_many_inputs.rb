@@ -74,6 +74,3 @@ def answer
 end
 
 welcome
-
-
-# Do all the bonus problems
